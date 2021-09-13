@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background: hsl(185, 41%, 84%);
+}
+main{
+    width: 600px;
+    display: flex;
+    background: hsl(0, 0%, 100%);
+    border-radius: 10px;
+}
+.user-service{
+    width: 50%;
+    margin: 20px;
+}
+.display{
+    width: 50%;
+    margin: 20px;
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 5px;
+}
+.form-group label{
+    color: hsl(186, 14%, 43%);
+    font-family: 'Space Mono', monospace;
+    font-size: 18px;
+}
+.bill{
+    height: 30px;
+    width: 250px;
+    text-align: right;
+    padding: 10px;
+    background: hsl(189, 41%, 97%);
+    border: none;
+    color: hsl(186, 14%, 43%);
+    margin-bottom: 30px;
+    font-family: 'Space Mono', monospace;
+}
+.input-icon{
+    position: relative;
+   
+}
+.input-icon i{
+    position: absolute;
+    top: 15%;
+    left: 10px;
+    font-size: 11px;
+    margin-bottom: 3px;
+    color: hsl(186, 14%, 43%);
+
+
+
+}
+.customer-tips h2{
+    font-size: 18px;
+    color: hsl(186, 14%, 43%);
+    font-family: 'Space Mono', monospace;
+    font-weight: 400;
+    margin-bottom:10px ;
+}
+.tips{
+    margin-bottom:20px ;
+}
+.customer-tips .btn{
+    padding: 5px 11px;
+    margin: 5px;
+    background: hsl(183, 100%, 15%);
+    border: none;
+    outline: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 4px;
+}
+.people{
+    height: 30px;
+    width: 250px;
+    text-align: right;
+    padding: 10px;
+    background-color: hsl(189, 41%, 97%);
+    border: none;
+    margin-top: 3px;
+    font-family: 'Space Mono',monospace;
+    margin-bottom: 10px;
+}
+.number-of-people{
+    font-family: 'Space Mono',monospace;
+    color: hsl(186, 14%, 43%);
+}
+.input-icon .fa-user{
+    margin-top: 5px;
+
+}
