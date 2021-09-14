@@ -83,6 +83,11 @@ main{
     font-size: 14px;
     border-radius: 4px;
 }
+.customer-tips .btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
 .people{
     height: 30px;
     width: 250px;
@@ -100,6 +105,7 @@ main{
 .number-of-people{
     font-family: 'Space Mono',monospace;
     color: hsl(186, 14%, 43%);
+    font-size: 18px;
 }
 .input-icon .fa-user{
     margin-top: 5px;
@@ -150,4 +156,8 @@ main{
     text-transform: uppercase;
     cursor: pointer;
    
+}
+.reset-btn:hover{
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(186, 14%, 43%);
 }
