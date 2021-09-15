@@ -5,10 +5,10 @@ class Tip{
         this.numOfPeople = numOfPeople
     }
     tipPerPerson(){
-        return (this.userBill * this.userTip)/(this.numOfPeople * 100)
+        return ((this.userBill * this.userTip)/(this.numOfPeople * 100)).toFixed(2)
     }
-    tipAmountPerPerson(){
-        return (this.userBill * (this.userTip + 100))/(this.numOfPeople * 100);
+    totalAmountPerPerson(){
+        return ((this.userBill * (this.userTip + 100))/(this.numOfPeople * 100)).toFixed(2);
     }
 
 }
@@ -20,12 +20,17 @@ tipBtns.forEach(btn=>{
     btn.addEventListener("click",e=>{
         let customerBill = parseFloat(document.querySelector(".bill").value);
         let tipPercentage = e.target.innerText.split("");
-        let tip = parseFloat(tipPercentage[0] + tipPercentage[1])
+        let tip = parseFloat(tipPercentage[0] + tipPercentage[1]);
         let numberOfPeople = parseFloat(document.querySelector(".people").value);
         let customerTip = new Tip(customerBill,tip,numberOfPeople);
+        let tipPricePerPerson = document.querySelector(".tipPrice");
+        let totalPricePerPerson =  document.querySelector(".totalPrice");
+
+        tipPricePerPerson.innerText = customerTip.tipPerPerson();
+        totalPricePerPerson.innerText = customerTip.totalAmountPerPerson();
         
         console.log(customerTip)
-        console.log(customerTip.tipAmountPerPerson())
+        console.log(customerTip.totalAmountPerPerson())
         console.log(customerTip.tipPerPerson())
         
         
