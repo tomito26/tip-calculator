@@ -4,8 +4,11 @@ class Tip{
         this.userTip = userTip;
         this.numOfPeople = numOfPeople
     }
-    tipAmount(){
-        return (this.userBill * (this.userTip + 100))/(this.numOfPeople * 100).toFixed(2);
+    tipPerPerson(){
+        return (this.userBill * this.userTip)/(this.numOfPeople * 100)
+    }
+    tipAmountPerPerson(){
+        return (this.userBill * (this.userTip + 100))/(this.numOfPeople * 100);
     }
 
 }
@@ -22,7 +25,9 @@ tipBtns.forEach(btn=>{
         let customerTip = new Tip(customerBill,tip,numberOfPeople);
         
         console.log(customerTip)
-        console.log(customerTip.tipAmount())
+        console.log(customerTip.tipAmountPerPerson())
+        console.log(customerTip.tipPerPerson())
+        
         
     })
 })
